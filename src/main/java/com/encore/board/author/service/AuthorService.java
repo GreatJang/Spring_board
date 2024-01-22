@@ -1,9 +1,9 @@
 package com.encore.board.author.service;
 
 import com.encore.board.author.domain.Author;
-import com.encore.board.author.domain.AuthorDetailResDto;
-import com.encore.board.author.domain.AuthorListResDto;
-import com.encore.board.author.domain.AuthorSaveReqDto;
+import com.encore.board.author.dto.AuthorDetailResDto;
+import com.encore.board.author.dto.AuthorListResDto;
+import com.encore.board.author.dto.AuthorSaveReqDto;
 import com.encore.board.author.repository.AuthorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
