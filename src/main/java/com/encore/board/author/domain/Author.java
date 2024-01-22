@@ -3,10 +3,8 @@ package com.encore.board.author.domain;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
-import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -37,9 +35,11 @@ public class Author {
     @Enumerated(EnumType.STRING)
     private Role role;
 
+    @CreationTimestamp
     @Column(columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     private LocalDateTime createdTime;
 
+    @UpdateTimestamp
     @Column(columnDefinition = "TIMESTAMP ON UPDATE CURRENT_TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     private LocalDateTime updatedTime;
 }
