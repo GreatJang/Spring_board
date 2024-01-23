@@ -1,6 +1,7 @@
 package com.encore.board.author.controller;
 
 import com.encore.board.author.dto.AuthorSaveReqDto;
+import com.encore.board.author.dto.AuthorUpdateReqDto;
 import com.encore.board.author.service.AuthorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -8,7 +9,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class AuthorController {
@@ -19,18 +19,21 @@ public class AuthorController {
         this.authorService = authorService;
     }
 
-    @GetMapping("/author/save")
-    @ResponseBody
-    public String authorSave(){
-        return "OK";
+//    @GetMapping("/author/create")
+//    @ResponseBody
+//    public String authorSave(){
+//        return "OK";
+//    }
+
+    @GetMapping("/author/create")
+    public String authorCreate(){
+        return "author/author-create";
     }
 
-    @PostMapping("/author/save")
-    @ResponseBody
+    @PostMapping("/author/create")
     public String authorSave(AuthorSaveReqDto authorSaveReqDto){ // 웹 입력값을 RequestBody 어노테이션 authorSaveReqDto으로 받음
         authorService.save(authorSaveReqDto); // save로 넘김
-        System.out.println(authorSaveReqDto);
-        return "OK";
+        return "redirect:/author/list";
     }
 
 //    @PostMapping("/author/list")
@@ -53,7 +56,20 @@ public class AuthorController {
     @GetMapping("/author/detail/{id}")
     public String authorDetail(@PathVariable Long id, Model model){
 //        AuthorDetailResDto authorDetailResDto = authorService.findById(id);
-        model.addAttribute("author", authorService.findById(id));
+        model.addAttribute("author", authorService.findAuthorDetail(id));
         return "author/author-detail";
+    }
+
+    @PostMapping("/author/{id}/update")
+    public String authorUpdate(@PathVariable Long id, AuthorUpdateReqDto authorUpdateReqDto){
+        authorService.update(id, authorUpdateReqDto);
+        return "redirect:/author/detail/"+ id;
+//        return "redirect:/member/member-detail?id="+memberRequestDto.getId();
+    }
+
+    @GetMapping("/author/delete/{id}")
+    public String authorDelete(@PathVariable Long id){
+        authorService.delete(id);
+        return "redirect:/author/list";
     }
 }
