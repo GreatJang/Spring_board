@@ -30,10 +30,17 @@ public class AuthorService {
         }else {
             role = Role.ADMIN;
         }
-        Author author = new Author(authorSaveReqDto.getName(),
-                                   authorSaveReqDto.getEmail(),
-                                   authorSaveReqDto.getPassword(),
-                                   role);
+//        일반 생성자 방식
+//        Author author = new Author(authorSaveReqDto.getName(),
+//                                   authorSaveReqDto.getEmail(),
+//                                   authorSaveReqDto.getPassword(),
+//                                   role);
+//        빌더패턴 // 순서상관없음
+        Author author = Author.builder()
+                .email(authorSaveReqDto.getEmail())
+                .name(authorSaveReqDto.getName())
+                .password(authorSaveReqDto.getPassword())
+                .build(); //최종적으로 완성시키는 단계 .build()
         authorRepository.save(author);
     }
 
