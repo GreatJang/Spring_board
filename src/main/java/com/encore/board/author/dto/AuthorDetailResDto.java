@@ -12,4 +12,5 @@ public class AuthorDetailResDto {
     private String password;
     private LocalDateTime createdTime;
     private String role;
+    private int counts;
 }
