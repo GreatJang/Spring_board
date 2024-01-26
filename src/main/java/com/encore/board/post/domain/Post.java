@@ -1,6 +1,7 @@
 package com.encore.board.post.domain;
 
 import com.encore.board.author.domain.Author;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,20 +12,20 @@ import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-@NoArgsConstructor
 @Getter
+@NoArgsConstructor
+@Builder
+@AllArgsConstructor
 public class Post {
-    @Builder
-    public Post(String title, String contents, Author author) {
-        this.title = title;
-        this.contents = contents;
-        this.author = author;
 //        author객체의 posts를 초기화시켜준 후,
 //        this.author.getPosts().add(this); // Author posts에 Setter를 사용하지 않고 사용하는 방법
-    }
+
     public void updatePost(String title, String contents){
         this.title = title;
         this.contents = contents;
+    }
+    public void updateAppointMent(String appointment){
+        this.appointment = appointment;
     }
 
     @Id
@@ -51,5 +52,9 @@ public class Post {
     @UpdateTimestamp
     @Column(columnDefinition = "TIMESTAMP ON UPDATE CURRENT_TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     private LocalDateTime updatedTime;
+
+    private String appointment;
+
+    private LocalDateTime appointmentTime;
 
 }

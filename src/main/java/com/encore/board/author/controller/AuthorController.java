@@ -34,9 +34,14 @@ public class AuthorController {
     }
 
     @PostMapping("/author/create")
-    public String authorSave(AuthorSaveReqDto authorSaveReqDto){ // 웹 입력값을 RequestBody 어노테이션 authorSaveReqDto으로 받음
-        authorService.save(authorSaveReqDto); // save로 넘김
-        return "redirect:/author/list";
+    public String authorSave(Model model, AuthorSaveReqDto authorSaveReqDto){ // 웹 입력값을 RequestBody 어노테이션 authorSaveReqDto으로 받음
+        try {
+            authorService.save(authorSaveReqDto);
+            return "redirect:/author/list";
+        }catch (IllegalArgumentException e){
+            model.addAttribute("errorMessage", e.getMessage());
+            return "author/author-create"; //model을 사용하니까 화면을 주어야함
+        }
     }
 
 //    @PostMapping("/author/list")

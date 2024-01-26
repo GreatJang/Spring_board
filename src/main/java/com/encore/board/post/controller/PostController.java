@@ -6,13 +6,15 @@ import com.encore.board.post.dto.PostSaveReqDto;
 import com.encore.board.post.dto.PostUpdateReqDto;
 import com.encore.board.post.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-
-import java.util.List;
 
 @Controller
 public class PostController {
@@ -29,17 +31,30 @@ public class PostController {
     }
 
     @PostMapping("/post/create")
-    public String postSave(PostSaveReqDto postSaveReqDto){
-        postService.save(postSaveReqDto);
-        return "redirect:/post/list";
+    public String postSave(Model model, PostSaveReqDto postSaveReqDto){
+        try {
+            postService.save(postSaveReqDto);
+            return "redirect:/post/list";
+        }catch (IllegalArgumentException e){
+            model.addAttribute("errorMessage", e.getMessage());
+            return "post/post-create";
+        }
     }
 
     @GetMapping("/post/list")
-    public String postList(Model model){
-        List<PostListResDto> postListResDtos = postService.findAll();
+//    localhost:8080/post/list?size=xx&page=xx&sort=xx,desc
+    public String postList(Model model, @PageableDefault(size = 5, sort = "createdTime", direction = Sort.Direction.DESC) Pageable pageable){
+        Page<PostListResDto> postListResDtos = postService.findByAppointment(pageable);
         model.addAttribute("postList", postListResDtos);
         return "post/post-list";
     }
+//    @GetMapping("/json/post/list")
+////    localhost:8080/post/list?size=xx&page=xx&sort=xx,desc
+//    @ResponseBody
+//    public Page<PostListResDto> postList(Pageable pageable){
+//        Page<PostListResDto> postListResDtos = postService.findAllPaging(pageable);
+//        return postListResDtos;
+//    }
 
     @GetMapping("/post/detail/{id}")
     public String postDetail(@PathVariable Long id, Model model){

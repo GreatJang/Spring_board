@@ -9,10 +9,14 @@ import com.encore.board.post.dto.PostSaveReqDto;
 import com.encore.board.post.dto.PostUpdateReqDto;
 import com.encore.board.post.repository.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityNotFoundException;
 import javax.transaction.Transactional;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,24 +32,37 @@ public class PostService {
         this.authorRepository = authorRepository;
     }
 
-    public void save(PostSaveReqDto postSaveReqDto) {
+    public void save(PostSaveReqDto postSaveReqDto) throws IllegalArgumentException{
 //        Post post = new Post(postSaveReqDto.getTitle(), postSaveReqDto.getContents());
         Author author = authorRepository.findByEmail(postSaveReqDto.getEmail()).orElse(null);
-//        postSaveReqDto.getEmail();
+        LocalDateTime localDateTime = null;
+        String appointment = null;
+        if(postSaveReqDto.getAppointment().equals("Y") // 예약 글쓰기 Y
+                && !postSaveReqDto.getAppointmentTime().isEmpty()){ // 시간설정 되어있을 시
+            DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm"); // 날짜 형식 설정
+             localDateTime = LocalDateTime.parse(postSaveReqDto.getAppointmentTime(), dateTimeFormatter); // 입력받은 시간 정한형식으로 localDateTime으로 받기
+            LocalDateTime now = LocalDateTime.now(); // 현재 시간 설정
+            if(localDateTime.isBefore(now)){ // 현재시간보다 더 이전으로 설정할경우 예외터트리기
+                throw new IllegalArgumentException("시간정보 잘못입력");
+            }
+            appointment = "Y";
+        }
+
         Post post = Post.builder()
                 .title(postSaveReqDto.getTitle())
                 .contents(postSaveReqDto.getContents())
                 .author(author)
+                .appointment(appointment)
+                .appointmentTime(localDateTime)
                 .build();
 
 //        더티체킹 테스트
-        author.updateMember("dirty checking test", "1234");
-
+//        author.updateMember("dirty checking test", "1234");
         postRepository.save(post);
     }
 
     public List<PostListResDto> findAll() {
-        List<Post> posts = postRepository.findAllFetchJoin(); // select * from post
+        List<Post> posts = postRepository.findAll(); // select * from post
         List<PostListResDto> postListResDtos = new ArrayList<>();
         for(Post post : posts){
             PostListResDto postListResDto = new PostListResDto();
@@ -54,6 +71,21 @@ public class PostService {
             postListResDto.setAuthor_email(post.getAuthor()==null? "익명유저" : post.getAuthor().getEmail());
             postListResDtos.add(postListResDto);
         }
+        return postListResDtos;
+    }
+    public Page<PostListResDto> findByAppointment(Pageable pageable) {
+//        Page객체 안에서 Map 지원.
+        Page<Post> posts = postRepository.findByAppointment(null, pageable); // select * from post // null값만 조회
+        Page<PostListResDto> postListResDtos
+                = posts.map(p -> new PostListResDto(p.getId(), p.getTitle(), p.getAuthor()==null? "익명유저" : p.getAuthor().getEmail()));
+        return postListResDtos;
+    }
+
+    public Page<PostListResDto> findAllPaging(Pageable pageable) {
+//        Page객체 안에서 Map 지원.
+        Page<Post> posts = postRepository.findAll(pageable); // select * from post
+        Page<PostListResDto> postListResDtos
+                = posts.map(p -> new PostListResDto(p.getId(), p.getTitle(), p.getAuthor()==null? "익명유저" : p.getAuthor().getEmail()));
         return postListResDtos;
     }
 
