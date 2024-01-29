@@ -93,4 +93,5 @@ fabric.properties
 # Project exclude paths
 /.gradle/
 /build/
+logs
 /build/classes/java/main/
