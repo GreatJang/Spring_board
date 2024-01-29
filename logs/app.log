@@ -25,3 +25,411 @@
 2024-01-29 14:06 o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
 2024-01-29 14:06 c.e.b.a.controller.LogTestController - 인포 로그입니다.
 2024-01-29 14:06 c.e.b.a.controller.LogTestController - 에러 로그입니다.
+2024-01-29 14:40 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 14:40 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-01-29 14:40 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-01-29 14:40 com.encore.board.BoardApplication - Starting BoardApplication using Java 11.0.0.1 on LAPTOP-ABP9I5IQ with PID 23380 (C:\Users\Playdata\Desktop\board\out\production\classes started by Playdata in C:\Users\Playdata\Desktop\board)
+2024-01-29 14:40 com.encore.board.BoardApplication - No active profile set, falling back to 1 default profile: "default"
+2024-01-29 14:40 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-29 14:40 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 2 JPA repository interfaces.
+2024-01-29 14:40 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-01-29 14:40 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-29 14:40 o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-01-29 14:40 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-29 14:40 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-01-29 14:40 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1180 ms
+2024-01-29 14:40 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-29 14:40 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-29 14:40 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-29 14:40 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-01-29 14:40 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-01-29 14:40 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-29 14:40 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-29 14:40 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 14:40 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-29 14:40 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-01-29 14:40 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-29 14:40 com.encore.board.BoardApplication - Started BoardApplication in 3.407 seconds (JVM running for 4.468)
+2024-01-29 14:40 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-29 14:40 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-01-29 14:40 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-01-29 14:40 c.encore.board.common.AopLogService - request methodpublic java.lang.String com.encore.board.author.controller.HomeController.home()
+2024-01-29 14:40 c.encore.board.common.AopLogService - Before Controller
+2024-01-29 14:40 c.encore.board.common.AopLogService - end controller
+2024-01-29 14:42 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 14:42 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-01-29 14:42 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-01-29 14:42 com.encore.board.BoardApplication - Starting BoardApplication using Java 11.0.0.1 on LAPTOP-ABP9I5IQ with PID 3608 (C:\Users\Playdata\Desktop\board\out\production\classes started by Playdata in C:\Users\Playdata\Desktop\board)
+2024-01-29 14:42 com.encore.board.BoardApplication - No active profile set, falling back to 1 default profile: "default"
+2024-01-29 14:42 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-29 14:42 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 2 JPA repository interfaces.
+2024-01-29 14:42 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-01-29 14:42 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-29 14:42 o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-01-29 14:42 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-29 14:42 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-01-29 14:42 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1052 ms
+2024-01-29 14:42 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-29 14:42 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-29 14:42 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-29 14:42 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-01-29 14:42 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-01-29 14:42 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-29 14:42 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-29 14:42 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 14:42 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-29 14:42 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-01-29 14:42 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-29 14:42 com.encore.board.BoardApplication - Started BoardApplication in 3.148 seconds (JVM running for 4.196)
+2024-01-29 14:42 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-29 14:42 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-01-29 14:42 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-01-29 14:42 c.e.b.a.controller.LogTestController - 인포 로그입니다.
+2024-01-29 14:42 c.e.b.a.controller.LogTestController - 에러 로그입니다.
+2024-01-29 14:42 c.encore.board.common.AopLogService - request methodString com.encore.board.author.controller.HomeController.home()
+2024-01-29 14:42 c.encore.board.common.AopLogService - Before Controller
+2024-01-29 14:42 c.encore.board.common.AopLogService - end controller
+2024-01-29 14:43 c.encore.board.common.AopLogService - request methodString com.encore.board.author.controller.HomeController.home()
+2024-01-29 14:43 c.encore.board.common.AopLogService - Before Controller
+2024-01-29 14:43 c.encore.board.common.AopLogService - end controller
+2024-01-29 14:54 c.e.b.a.controller.LogTestController - 인포 로그입니다.
+2024-01-29 14:54 c.e.b.a.controller.LogTestController - 에러 로그입니다.
+2024-01-29 14:54 c.e.b.a.controller.LogTestController - 인포 로그입니다.
+2024-01-29 14:54 c.e.b.a.controller.LogTestController - 에러 로그입니다.
+2024-01-29 14:54 c.e.b.a.controller.LogTestController - 인포 로그입니다.
+2024-01-29 14:54 c.e.b.a.controller.LogTestController - 에러 로그입니다.
+2024-01-29 14:56 c.e.b.a.controller.LogTestController - 인포 로그입니다.
+2024-01-29 14:56 c.e.b.a.controller.LogTestController - 에러 로그입니다.
+2024-01-29 14:56 c.e.b.a.controller.LogTestController - 인포 로그입니다.
+2024-01-29 14:56 c.e.b.a.controller.LogTestController - 에러 로그입니다.
+2024-01-29 14:56 c.e.b.a.controller.LogTestController - 인포 로그입니다.
+2024-01-29 14:56 c.e.b.a.controller.LogTestController - 에러 로그입니다.
+2024-01-29 14:56 c.e.b.a.controller.LogTestController - 인포 로그입니다.
+2024-01-29 14:56 c.e.b.a.controller.LogTestController - 에러 로그입니다.
+2024-01-29 14:56 c.e.b.a.controller.LogTestController - 인포 로그입니다.
+2024-01-29 14:56 c.e.b.a.controller.LogTestController - 에러 로그입니다.
+2024-01-29 14:56 c.e.b.a.controller.LogTestController - 인포 로그입니다.
+2024-01-29 14:56 c.e.b.a.controller.LogTestController - 에러 로그입니다.
+2024-01-29 14:56 c.e.b.a.controller.LogTestController - 인포 로그입니다.
+2024-01-29 14:56 c.e.b.a.controller.LogTestController - 에러 로그입니다.
+2024-01-29 15:22 c.encore.board.common.AopLogService - request methodString com.encore.board.author.controller.HomeController.home()
+2024-01-29 15:22 c.encore.board.common.AopLogService - Before Controller
+2024-01-29 15:22 c.encore.board.common.AopLogService - end controller
+2024-01-29 15:23 c.encore.board.common.AopLogService - request methodString com.encore.board.author.controller.AuthorController.authorCreate()
+2024-01-29 15:23 c.encore.board.common.AopLogService - Before Controller
+2024-01-29 15:23 c.encore.board.common.AopLogService - end controller
+2024-01-29 15:23 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 15:23 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-01-29 15:23 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-01-29 15:23 com.encore.board.BoardApplication - Starting BoardApplication using Java 11.0.0.1 on LAPTOP-ABP9I5IQ with PID 10120 (C:\Users\Playdata\Desktop\board\out\production\classes started by Playdata in C:\Users\Playdata\Desktop\board)
+2024-01-29 15:23 com.encore.board.BoardApplication - No active profile set, falling back to 1 default profile: "default"
+2024-01-29 15:23 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-29 15:23 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces.
+2024-01-29 15:23 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-01-29 15:23 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-29 15:23 o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-01-29 15:23 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-29 15:23 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-01-29 15:23 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1192 ms
+2024-01-29 15:23 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-29 15:23 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-29 15:23 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-29 15:23 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-01-29 15:23 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-01-29 15:23 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-29 15:23 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-29 15:23 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 15:23 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-29 15:23 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-01-29 15:23 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-29 15:23 com.encore.board.BoardApplication - Started BoardApplication in 3.247 seconds (JVM running for 4.327)
+2024-01-29 15:23 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-29 15:23 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-01-29 15:23 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-01-29 15:23 c.encore.board.common.AopLogService - user request info{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-29 15:23 c.e.b.a.controller.LogTestController - 인포 로그입니다.
+2024-01-29 15:23 c.e.b.a.controller.LogTestController - 에러 로그입니다.
+2024-01-29 15:23 c.encore.board.common.AopLogService - user request info{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-29 15:25 c.encore.board.common.AopLogService - user request info{"Method Name":"authorSave","CRUD Name":"POST","user inputs":{"name":["save"],"email":["save@gmail.com"],"password":["save1234"],"role":["USER"]}}
+2024-01-29 15:25 c.encore.board.common.AopLogService - user request info{"Method Name":"authorList","CRUD Name":"GET","user inputs":{}}
+2024-01-29 15:38 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 15:38 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-01-29 15:38 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-01-29 15:38 com.encore.board.BoardApplication - Starting BoardApplication using Java 11.0.0.1 on LAPTOP-ABP9I5IQ with PID 16572 (C:\Users\Playdata\Desktop\board\out\production\classes started by Playdata in C:\Users\Playdata\Desktop\board)
+2024-01-29 15:38 com.encore.board.BoardApplication - No active profile set, falling back to 1 default profile: "default"
+2024-01-29 15:38 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-29 15:38 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66 ms. Found 2 JPA repository interfaces.
+2024-01-29 15:38 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-01-29 15:38 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-29 15:38 o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-01-29 15:38 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-29 15:38 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-01-29 15:38 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1247 ms
+2024-01-29 15:38 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-29 15:38 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-29 15:38 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-29 15:38 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-01-29 15:38 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-01-29 15:38 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-29 15:38 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-29 15:38 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 15:39 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-29 15:39 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-01-29 15:39 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-29 15:39 com.encore.board.BoardApplication - Started BoardApplication in 3.532 seconds (JVM running for 4.67)
+2024-01-29 15:39 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-29 15:39 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-01-29 15:39 o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-01-29 15:39 c.encore.board.common.AopLogService - Before Controller
+2024-01-29 15:39 c.encore.board.common.AopLogService - user request info{"Method Name":"postList","CRUD Name":"GET","user inputs":{}}
+2024-01-29 15:39 c.encore.board.common.AopLogService - end controller
+2024-01-29 15:39 c.encore.board.common.AopLogService - Before Controller
+2024-01-29 15:39 c.encore.board.common.AopLogService - user request info{"Method Name":"postList","CRUD Name":"GET","user inputs":{}}
+2024-01-29 15:39 c.encore.board.common.AopLogService - end controller
+2024-01-29 15:39 c.encore.board.common.AopLogService - Before Controller
+2024-01-29 15:39 c.encore.board.common.AopLogService - user request info{"Method Name":"postCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-29 15:39 c.encore.board.common.AopLogService - end controller
+2024-01-29 15:39 c.encore.board.common.AopLogService - Before Controller
+2024-01-29 15:39 c.encore.board.common.AopLogService - user request info{"Method Name":"postSave","CRUD Name":"POST","user inputs":{"title":["글글글"],"contents":["글글글글글글글글글"],"email":["jang@gmail.com"],"appointment":["N"],"appointmentTime":[""]}}
+2024-01-29 15:39 c.encore.board.common.AopLogService - end controller
+2024-01-29 15:39 c.encore.board.common.AopLogService - Before Controller
+2024-01-29 15:39 c.encore.board.common.AopLogService - user request info{"Method Name":"postList","CRUD Name":"GET","user inputs":{}}
+2024-01-29 15:39 c.encore.board.common.AopLogService - end controller
+2024-01-29 16:25 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 16:25 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-01-29 16:25 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-01-29 16:25 com.encore.board.BoardApplication - Starting BoardApplication using Java 11.0.0.1 on LAPTOP-ABP9I5IQ with PID 23736 (C:\Users\Playdata\Desktop\board\out\production\classes started by Playdata in C:\Users\Playdata\Desktop\board)
+2024-01-29 16:25 com.encore.board.BoardApplication - No active profile set, falling back to 1 default profile: "default"
+2024-01-29 16:25 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-29 16:25 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 2 JPA repository interfaces.
+2024-01-29 16:25 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-01-29 16:25 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-29 16:25 o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-01-29 16:25 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-29 16:25 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-01-29 16:25 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1182 ms
+2024-01-29 16:25 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-29 16:25 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-29 16:25 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-29 16:25 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-01-29 16:25 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-01-29 16:25 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-29 16:25 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-29 16:25 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 16:25 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-29 16:25 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-01-29 16:25 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-29 16:25 com.encore.board.BoardApplication - Started BoardApplication in 3.284 seconds (JVM running for 4.434)
+2024-01-29 16:25 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-29 16:25 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-01-29 16:25 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-01-29 16:25 c.encore.board.common.AopLogService - user request info{"Method Name":"authorList","CRUD Name":"GET","user inputs":{}}
+2024-01-29 16:25 c.encore.board.common.AopLogService - end controller
+2024-01-29 16:25 c.encore.board.common.AopLogService - user request info{"Method Name":"authorDetail","CRUD Name":"GET","user inputs":{}}
+2024-01-29 16:25 c.encore.board.common.AopLogService - end controller
+2024-01-29 16:25 c.encore.board.common.AopLogService - user request info{"Method Name":"authorDetail","CRUD Name":"GET","user inputs":{}}
+2024-01-29 16:25 c.encore.board.common.AopLogService - 검색하신 ID의 회원이 없습니다.
+2024-01-29 16:25 c.encore.board.common.AopLogService - end controller
+2024-01-29 16:25 c.e.board.common.CommonException - Handler EntityNotFoundException message : 검색하신 ID의 회원이 없습니다.
+2024-01-29 16:28 c.encore.board.common.AopLogService - user request info{"Method Name":"authorList","CRUD Name":"GET","user inputs":{}}
+2024-01-29 16:28 c.encore.board.common.AopLogService - end controller
+2024-01-29 16:28 c.encore.board.common.AopLogService - user request info{"Method Name":"authorList","CRUD Name":"GET","user inputs":{}}
+2024-01-29 16:28 c.encore.board.common.AopLogService - end controller
+2024-01-29 16:28 c.encore.board.common.AopLogService - user request info{"Method Name":"authorList","CRUD Name":"GET","user inputs":{}}
+2024-01-29 16:28 c.encore.board.common.AopLogService - end controller
+2024-01-29 16:28 c.encore.board.common.AopLogService - user request info{"Method Name":"authorList","CRUD Name":"GET","user inputs":{}}
+2024-01-29 16:28 c.encore.board.common.AopLogService - end controller
+2024-01-29 16:28 c.encore.board.common.AopLogService - user request info{"Method Name":"authorList","CRUD Name":"GET","user inputs":{}}
+2024-01-29 16:28 c.encore.board.common.AopLogService - end controller
+2024-01-29 16:28 c.encore.board.common.AopLogService - user request info{"Method Name":"authorList","CRUD Name":"GET","user inputs":{}}
+2024-01-29 16:28 c.encore.board.common.AopLogService - end controller
+2024-01-29 16:28 c.encore.board.common.AopLogService - user request info{"Method Name":"authorList","CRUD Name":"GET","user inputs":{}}
+2024-01-29 16:28 c.encore.board.common.AopLogService - end controller
+2024-01-29 16:28 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 16:28 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-01-29 16:28 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-01-29 16:28 com.encore.board.BoardApplication - Starting BoardApplication using Java 11.0.0.1 on LAPTOP-ABP9I5IQ with PID 16432 (C:\Users\Playdata\Desktop\board\out\production\classes started by Playdata in C:\Users\Playdata\Desktop\board)
+2024-01-29 16:28 com.encore.board.BoardApplication - No active profile set, falling back to 1 default profile: "default"
+2024-01-29 16:28 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-29 16:28 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces.
+2024-01-29 16:28 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-01-29 16:28 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-29 16:28 o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-01-29 16:28 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-29 16:28 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-01-29 16:28 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1113 ms
+2024-01-29 16:28 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-29 16:28 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-29 16:28 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-29 16:28 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-01-29 16:28 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-01-29 16:28 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-29 16:28 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-29 16:28 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 16:28 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-29 16:28 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-01-29 16:28 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-29 16:28 com.encore.board.BoardApplication - Started BoardApplication in 3.175 seconds (JVM running for 4.214)
+2024-01-29 16:28 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-29 16:28 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-01-29 16:28 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-01-29 16:28 c.encore.board.common.AopLogService - user request info{"Method Name":"authorDetail","CRUD Name":"GET","user inputs":{}}
+2024-01-29 16:28 c.encore.board.common.AopLogService - end controller
+2024-01-29 16:28 c.encore.board.common.AopLogService - user request info{"Method Name":"authorDetail","CRUD Name":"GET","user inputs":{}}
+2024-01-29 16:28 c.encore.board.common.AopLogService - 검색하신 ID의 회원이 없습니다. author not found
+2024-01-29 16:28 c.encore.board.common.AopLogService - end controller
+2024-01-29 16:28 c.e.board.common.CommonException - Handler EntityNotFoundException message : 검색하신 ID의 회원이 없습니다. author not found
+2024-01-29 16:43 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 16:43 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-01-29 16:43 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-01-29 16:43 com.encore.board.BoardApplication - Starting BoardApplication using Java 11.0.0.1 on LAPTOP-ABP9I5IQ with PID 21880 (C:\Users\Playdata\Desktop\board\out\production\classes started by Playdata in C:\Users\Playdata\Desktop\board)
+2024-01-29 16:43 com.encore.board.BoardApplication - No active profile set, falling back to 1 default profile: "default"
+2024-01-29 16:43 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-29 16:43 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75 ms. Found 2 JPA repository interfaces.
+2024-01-29 16:43 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-01-29 16:43 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-29 16:43 o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-01-29 16:43 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-29 16:43 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-01-29 16:43 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1092 ms
+2024-01-29 16:43 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-29 16:43 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-29 16:43 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-29 16:43 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-01-29 16:43 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-01-29 16:43 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-29 16:43 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-29 16:43 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 16:43 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-29 16:43 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-01-29 16:43 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-29 16:43 com.encore.board.BoardApplication - Started BoardApplication in 3.072 seconds (JVM running for 4.259)
+2024-01-29 16:43 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-29 16:43 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-01-29 16:43 o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-01-29 16:43 c.encore.board.common.AopLogService - user request info{"Method Name":"postList","CRUD Name":"GET","user inputs":{}}
+2024-01-29 16:43 c.encore.board.common.AopLogService - end controller
+2024-01-29 16:43 c.encore.board.common.AopLogService - user request info{"Method Name":"authorList","CRUD Name":"GET","user inputs":{}}
+2024-01-29 16:43 c.encore.board.common.AopLogService - end controller
+2024-01-29 16:44 c.encore.board.common.AopLogService - user request info{"Method Name":"authorDetail","CRUD Name":"GET","user inputs":{}}
+2024-01-29 16:44 c.encore.board.common.AopLogService - end controller
+2024-01-29 16:44 c.encore.board.common.AopLogService - user request info{"Method Name":"authorDetail","CRUD Name":"GET","user inputs":{}}
+2024-01-29 16:44 c.encore.board.common.AopLogService - 검색하신 ID의 회원이 없습니다. author not found
+2024-01-29 16:44 c.encore.board.common.AopLogService - end controller
+2024-01-29 16:44 c.e.board.common.CommonException - Handler EntityNotFoundException message : 검색하신 ID의 회원이 없습니다. author not found
+2024-01-29 16:44 c.encore.board.common.AopLogService - user request info{"Method Name":"authorDetail","CRUD Name":"GET","user inputs":{}}
+2024-01-29 16:44 c.encore.board.common.AopLogService - 검색하신 ID의 회원이 없습니다. author not found
+2024-01-29 16:44 c.encore.board.common.AopLogService - end controller
+2024-01-29 16:44 c.e.board.common.CommonException - Handler EntityNotFoundException message : 검색하신 ID의 회원이 없습니다. author not found
+2024-01-29 16:44 c.e.b.a.controller.TestController - 인포 로그입니다.
+2024-01-29 16:44 c.e.b.a.controller.TestController - 에러 로그입니다.
+2024-01-29 16:45 c.e.board.common.CommonException - Handler EntityNotFoundException message : 검색하신 ID의 회원이 없습니다. author not found
+2024-01-29 17:04 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 17:04 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-01-29 17:04 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-01-29 17:18 com.encore.board.BoardApplication - Starting BoardApplication using Java 11.0.0.1 on LAPTOP-ABP9I5IQ with PID 11948 (C:\Users\Playdata\Desktop\board\out\production\classes started by Playdata in C:\Users\Playdata\Desktop\board)
+2024-01-29 17:18 com.encore.board.BoardApplication - No active profile set, falling back to 1 default profile: "default"
+2024-01-29 17:18 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-29 17:18 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 72 ms. Found 2 JPA repository interfaces.
+2024-01-29 17:18 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-01-29 17:18 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-29 17:18 o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-01-29 17:18 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-29 17:18 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-01-29 17:18 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1218 ms
+2024-01-29 17:18 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-29 17:18 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-29 17:18 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-29 17:18 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-01-29 17:18 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-01-29 17:18 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-29 17:18 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-29 17:18 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 17:18 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-29 17:18 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: abfb2168-e8c5-4c4f-987a-931affd47b97
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-01-29 17:18 o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4afdb05e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2165d4ab, org.springframework.security.web.context.SecurityContextPersistenceFilter@1690929, org.springframework.security.web.header.HeaderWriterFilter@7e5c8c80, org.springframework.security.web.csrf.CsrfFilter@3e265811, org.springframework.security.web.authentication.logout.LogoutFilter@3724ab90, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3b8a063d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7c31e01f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7f9b851c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@c3a1d7f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1dae9e61, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a70daf4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a8ab98f, org.springframework.security.web.session.SessionManagementFilter@7674f9d4, org.springframework.security.web.access.ExceptionTranslationFilter@7bdddfa4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@684bfba9]
+2024-01-29 17:18 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-01-29 17:18 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-29 17:18 com.encore.board.BoardApplication - Started BoardApplication in 3.662 seconds (JVM running for 5.171)
+2024-01-29 17:18 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-29 17:18 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-01-29 17:18 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-01-29 17:18 o.a.c.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [533] milliseconds.
+2024-01-29 17:21 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 17:21 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-01-29 17:21 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-01-29 17:21 com.encore.board.BoardApplication - Starting BoardApplication using Java 11.0.0.1 on LAPTOP-ABP9I5IQ with PID 7304 (C:\Users\Playdata\Desktop\board\out\production\classes started by Playdata in C:\Users\Playdata\Desktop\board)
+2024-01-29 17:21 com.encore.board.BoardApplication - No active profile set, falling back to 1 default profile: "default"
+2024-01-29 17:21 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-29 17:21 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 80 ms. Found 2 JPA repository interfaces.
+2024-01-29 17:21 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-01-29 17:21 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-29 17:21 o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-01-29 17:21 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-29 17:21 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-01-29 17:21 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1183 ms
+2024-01-29 17:21 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-29 17:21 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-29 17:21 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-29 17:21 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-01-29 17:21 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-01-29 17:21 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-29 17:21 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-29 17:21 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 17:21 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-29 17:21 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-01-29 17:21 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-29 17:21 com.encore.board.BoardApplication - Started BoardApplication in 3.274 seconds (JVM running for 4.459)
+2024-01-29 17:24 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-29 17:24 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-01-29 17:24 o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-01-29 17:24 c.encore.board.common.AopLogService - user request info{"Method Name":"errorHtml","CRUD Name":"GET","user inputs":{}}
+2024-01-29 17:24 c.encore.board.common.AopLogService - end controller
+2024-01-29 17:24 c.encore.board.common.AopLogService - user request info{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-29 17:24 c.encore.board.common.AopLogService - end controller
+2024-01-29 17:32 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 17:32 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-01-29 17:32 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-01-29 17:32 com.encore.board.BoardApplication - Starting BoardApplication using Java 11.0.0.1 on LAPTOP-ABP9I5IQ with PID 19924 (C:\Users\Playdata\Desktop\board\out\production\classes started by Playdata in C:\Users\Playdata\Desktop\board)
+2024-01-29 17:32 com.encore.board.BoardApplication - No active profile set, falling back to 1 default profile: "default"
+2024-01-29 17:32 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-29 17:32 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 89 ms. Found 2 JPA repository interfaces.
+2024-01-29 17:32 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-01-29 17:32 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-29 17:32 o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-01-29 17:32 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-29 17:32 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-01-29 17:32 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1590 ms
+2024-01-29 17:32 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-29 17:32 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-29 17:32 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-29 17:32 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-01-29 17:32 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-01-29 17:32 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-29 17:32 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-29 17:32 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 17:32 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-29 17:32 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 7aeabe7d-e9f6-46e5-ae26-2a0c0bb62691
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-01-29 17:32 o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@438a65a7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@543c887, org.springframework.security.web.context.SecurityContextPersistenceFilter@47fbf95e, org.springframework.security.web.header.HeaderWriterFilter@13e6c544, org.springframework.security.web.csrf.CsrfFilter@252d2ac0, org.springframework.security.web.authentication.logout.LogoutFilter@11267e87, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1e37cb10, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@755033c5, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@75f446df, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@943cf5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f9999f6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e096ac0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3751baf6, org.springframework.security.web.session.SessionManagementFilter@623ed5ed, org.springframework.security.web.access.ExceptionTranslationFilter@32eb38e5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@77604a86]
+2024-01-29 17:32 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-01-29 17:32 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-29 17:32 com.encore.board.BoardApplication - Started BoardApplication in 4.19 seconds (JVM running for 5.889)
+2024-01-29 17:32 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-29 17:32 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-01-29 17:32 o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-01-29 17:32 o.a.c.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [479] milliseconds.
+2024-01-29 17:32 c.encore.board.common.AopLogService - user request info{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-29 17:32 c.encore.board.common.AopLogService - end controller
+2024-01-29 17:52 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 17:52 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-01-29 17:52 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

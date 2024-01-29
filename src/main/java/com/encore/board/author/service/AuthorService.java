@@ -47,7 +47,7 @@ public class AuthorService {
                 .email(authorSaveReqDto.getEmail())
                 .name(authorSaveReqDto.getName())
                 .password(authorSaveReqDto.getPassword())
-                .role(Role.valueOf(authorSaveReqDto.getRole()))
+                .role(role)
                 .build(); //최종적으로 완성시키는 단계 .build()
         authorRepository.save(author);
 
