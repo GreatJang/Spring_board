@@ -79,12 +79,12 @@ public class AuthorService {
     }
 
     public Author findById(Long id) throws EntityNotFoundException {
-        Author author = authorRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("검색하신 ID의 회원이 없습니다."));
+        Author author = authorRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("검색하신 ID의 회원이 없습니다. author not found"));
         return author;
     }
 
     public AuthorDetailResDto findAuthorDetail(Long id) throws EntityNotFoundException {
-        Author author = authorRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("검색하신 ID의 회원이 없습니다."));
+        Author author = authorRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("검색하신 ID의 회원이 없습니다. author not found"));
         String role = null; // role 출력시 분기처리해서 한글로 출력
         if(author.getRole() == null || author.getRole().equals(Role.USER)){
             role = "일반유저";

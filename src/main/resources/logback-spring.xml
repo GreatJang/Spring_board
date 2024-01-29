@@ -38,7 +38,7 @@
     </appender>
 
 <!--        info 로그의 경우 정상 log파일로 분리-->
-    <root level="DEBUG">
+    <root level="INFO">
 <!--                console과 정상 log파일에 로그내용 추가-->
         <appender-ref ref="CONSOLE"/>
         <appender-ref ref="FILE"/>
