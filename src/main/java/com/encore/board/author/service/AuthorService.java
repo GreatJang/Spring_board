@@ -9,6 +9,7 @@ import com.encore.board.author.dto.AuthorUpdateReqDto;
 import com.encore.board.author.repository.AuthorRepository;
 import com.encore.board.post.repository.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityNotFoundException;
@@ -20,11 +21,13 @@ import java.util.List;
 @Transactional
 public class AuthorService {
     private final AuthorRepository authorRepository;
+    private final PasswordEncoder passwordEncoder;
     private final PostRepository postRepository;
 
     @Autowired // 생성자가 하나이면 자동으로 주입이 되지만 생성자가 많아지면 꼭 써주어야하기때문에 일단 써놓는게 좋다.
-    public AuthorService(AuthorRepository authorRepository, PostRepository postRepository) {
+    public AuthorService(AuthorRepository authorRepository, PasswordEncoder passwordEncoder, PostRepository postRepository) {
         this.authorRepository = authorRepository;
+        this.passwordEncoder = passwordEncoder;
         this.postRepository = postRepository;
     }
 
@@ -32,7 +35,7 @@ public class AuthorService {
         if(authorRepository.findByEmail(authorSaveReqDto.getEmail()).isPresent()) throw new IllegalArgumentException("중복이메일");
 
         Role role = null;
-        if(authorSaveReqDto.getRole() == null || authorSaveReqDto.getRole().equals("user")){ //분기처리
+        if(authorSaveReqDto.getRole() == null || authorSaveReqDto.getRole().equals("USER")){ //분기처리
             role = Role.USER;
         }else {
             role = Role.ADMIN;
@@ -43,10 +46,11 @@ public class AuthorService {
 //                                   authorSaveReqDto.getPassword(),
 //                                   role);
 //        빌더패턴 // 순서상관없음
+        System.out.println(role);
         Author author = Author.builder()
                 .email(authorSaveReqDto.getEmail())
                 .name(authorSaveReqDto.getName())
-                .password(authorSaveReqDto.getPassword())
+                .password(passwordEncoder.encode(authorSaveReqDto.getPassword()))
                 .role(role)
                 .build(); //최종적으로 완성시키는 단계 .build()
         authorRepository.save(author);
@@ -80,6 +84,10 @@ public class AuthorService {
 
     public Author findById(Long id) throws EntityNotFoundException {
         Author author = authorRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("검색하신 ID의 회원이 없습니다. author not found"));
+        return author;
+    }
+    public Author findByEmail(String email) throws EntityNotFoundException {
+        Author author = authorRepository.findByEmail(email).orElseThrow(() -> new EntityNotFoundException("검색하신 ID의 회원이 없습니다. author not found"));
         return author;
     }
 

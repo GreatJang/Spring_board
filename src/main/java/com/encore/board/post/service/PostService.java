@@ -32,9 +32,10 @@ public class PostService {
         this.authorRepository = authorRepository;
     }
 
-    public void save(PostSaveReqDto postSaveReqDto) throws IllegalArgumentException{
-//        Post post = new Post(postSaveReqDto.getTitle(), postSaveReqDto.getContents());
-        Author author = authorRepository.findByEmail(postSaveReqDto.getEmail()).orElse(null);
+    public void save(PostSaveReqDto postSaveReqDto, String email) throws IllegalArgumentException{
+//        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+//        String email = authentication.getName();
+        Author author = authorRepository.findByEmail(email).orElse(null);
         LocalDateTime localDateTime = null;
         String appointment = null;
         if(postSaveReqDto.getAppointment().equals("Y") // 예약 글쓰기 Y
