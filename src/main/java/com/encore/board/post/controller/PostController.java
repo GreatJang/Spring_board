@@ -40,7 +40,7 @@ public class PostController {
 //            HttpSession session = req.getSession();
 //            System.out.println(session.getAttribute("email"));
 
-            postService.save(postSaveReqDto, httpSession.getAttribute("email").toString());
+                    postService.save(postSaveReqDto, httpSession.getAttribute("email").toString());
             return "redirect:/post/list";
         }catch (IllegalArgumentException e){
             model.addAttribute("errorMessage", e.getMessage());
