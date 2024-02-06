@@ -26,11 +26,11 @@ public class LoginService implements UserDetailsService {
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         Author author = authorService.findByEmail(username);
         List<GrantedAuthority> authorities = new ArrayList<>();
-//        ROLE_권한 이 패턴으로 스프링에서 기본적으로 권한체크
+////        ROLE_권한 이 패턴으로 스프링에서 기본적으로 권한체크
         authorities.add(new SimpleGrantedAuthority("ROLE_" + author.getRole()));
 
-//        매개변수 : userEmail, userPassWord, 권한(authorities)
-//        해당 메서드에서 return되는 User객체는 session 메모리 저장소에 저장되어, 계속 사용 가능
+////        매개변수 : userEmail, userPassWord, 권한(authorities)
+////        해당 메서드에서 return되는 User객체는 session 메모리 저장소에 저장되어, 계속 사용 가능
         return new User(author.getEmail(), author.getPassword(), authorities);
     }
 }
