@@ -102,7 +102,7 @@ public class PostService {
         postDetailResDto.setId(post.getId());
         postDetailResDto.setTitle(post.getTitle());
         postDetailResDto.setContents(post.getContents());
-        postDetailResDto.setCreatedTime(post.getCreatedTime());
+        postDetailResDto.setCreatedTime(post.getCreatedAt());
         return postDetailResDto;
     }
 
